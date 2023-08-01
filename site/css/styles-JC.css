@@ -1,0 +1,291 @@
+/*--- HTML RESET template: https://www.joshwcomeau.com/css/custom-css-reset/ ---*/
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+    min-height: 100%;
+}
+
+/* Typographic tweaks! 
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ---------------------------------- INICIO DO CSS --------------------------------------*/
+
+body {
+    background: #d0e0ff;
+    padding-bottom: 5rem;
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(117, 156, 163) 100%); */
+}
+
+.titulo {
+    font-size: 1.5rem !important;
+    color: #2f5877;
+    font-weight: 600;
+    border-bottom: 1px solid #2f58772c;
+    margin: 2rem 0px 1rem !important;
+}
+
+header {
+    margin: 1rem;
+    margin-top: 3rem;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2f5877;
+}
+header p:nth-child(3) {
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+}
+
+.pequeno {
+    font-size: .8rem;
+    color: black;
+}
+
+header img {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+header .header__buttons {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: .5rem;
+}
+
+header .header__buttons .cadastrar {
+    background-color: #326554;
+    color: #fff;
+    text-align: center;
+}
+
+header .header__buttons .consultar {
+    background-color: #369a6e;
+    text-align: center;
+}
+
+header .header__buttons .cadastrar:hover,
+header .header__buttons .consultar:hover {
+    background-color: #214136;
+    color: white;
+}
+
+
+.buttom {
+    padding: 1rem 2rem;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1ca126;
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    max-width: 80%;
+    flex-direction: column;
+    margin: 250px auto 0px auto;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem .5rem;
+    
+}
+
+.alinhar_ao_centro {
+    text-align: center;
+}
+
+.um_do_lado_do_outro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid;
+    margin-top: 5rem;
+}
+
+.um_do_lado_do_outro .order_2 {
+    order: 2;
+}
+
+
+.colunasimples {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.imagemlogo {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 500px;
+}
+
+.cabecalho__wrapper ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho__wrapper li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.link_botao {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 5px;
+    background-color: #1ca126;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link_botao:hover {
+    background-color: #07460c;
+}
+
+.cabecalho__wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+.cabecalho__wrapper img {
+    height: 55px;
+    margin-left: 1rem;
+}
+
+/*----- inputs -----*/
+
+input, select {
+    border: 0px;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: .2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#consulta, #cadastro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0rem 2rem;
+}
+
+#cadastro label {
+    display: flex;
+    justify-content: left;
+    font-weight: 600;
+    color: rgb(58 58 58);
+}
+
+.formulario p {
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: .8rem;
+}
+
+
+#consulta .wrapper, #cadastro .wrapper {
+    text-align: center;
+    max-width: 400px;
+}
+
+#cpf_consulta {
+    text-align: center !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.wrapp_center {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapp_center img {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.consulta_aprovada {
+    background-color: aquamarine;
+    padding: 0rem 0px 2rem;
+}
+
+
+
+.conteudo-wrapper {
+    display: none;
+}
